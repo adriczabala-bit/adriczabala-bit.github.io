@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adrián Zabala García · Junior Data Analyst</title>
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--text:#14181f;--muted:#5b6472;--accent:#2563eb;--accent-soft:#e8efff;--border:#e3e6ec;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1117;--card:#161b24;--text:#e8ebf0;--muted:#9aa4b2;--accent:#6ea0ff;--accent-soft:#1c2a47;--border:#262d3a}}
+:root[data-theme="dark"]{--bg:#0e1117;--card:#161b24;--text:#e8ebf0;--muted:#9aa4b2;--accent:#6ea0ff;--accent-soft:#1c2a47;--border:#262d3a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:860px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:2.2rem;line-height:1.15;margin:0 0 6px}
+h2{font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:48px 0 16px}
+h3{margin:0 0 4px;font-size:1.08rem}
+p{margin:0 0 10px}
+ul{margin:8px 0 0;padding-left:20px}li{margin-bottom:4px}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.role{font-size:1.25rem;color:var(--accent);font-weight:600;margin-bottom:14px}
+.badge{display:inline-block;background:var(--accent-soft);color:var(--accent);padding:4px 12px;border-radius:99px;font-size:.85rem;font-weight:600;margin-bottom:18px}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{display:inline-block;padding:9px 18px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text);font-weight:600}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{text-decoration:none;opacity:.88}
+.grid{display:grid;gap:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 12px}
+.tag{font-size:.78rem;padding:2px 10px;border-radius:99px;border:1px solid var(--border);color:var(--muted)}
+.meta{color:var(--muted);font-size:.9rem;margin-bottom:6px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.skill{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center;font-weight:600}
+.row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer{margin-top:56px;color:var(--muted);font-size:.85rem}
+@media(min-width:700px){.two{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<main>
+<span class="badge">Buscando oportunidades como analista de datos junior</span>
+<h1>Adrián Zabala García</h1>
+<div class="role">Junior Data Analyst · Madrid</div>
+<p>Perfil orientado al análisis de datos, con formación en Administración y Finanzas y especialización en Data Analytics. Vengo de entornos de negocio, donde trabajé con información comercial, KPIs, Excel y SAP, y me interesa convertir los datos en información útil para tomar decisiones.</p>
+<div class="links">
+<a class="btn primary" href="mailto:adriczabala@gmail.com">Contactar</a>
+<a class="btn" href="https://linkedin.com/in/adrián-zabala-garcía-433b61396" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://github.com/adriczabala-bit" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="https://crime-pulse-madrid.streamlit.app" target="_blank" rel="noopener">Demo online</a>
+</div>
+
+<h2>Proyectos de datos</h2>
+<div class="grid">
+<div class="card">
+<h3>Madrid Traffic Intelligence</h3>
+<div class="meta">Análisis de las multas de circulación de Madrid · datos abiertos del Ayuntamiento</div>
+<p>Dashboard interactivo sobre las sanciones de tráfico de la ciudad, con foco en cómo se distribuyen las multas a lo largo del día.</p>
+<div class="tags"><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Datos abiertos</span></div>
+<a href="https://github.com/adriczabala-bit" target="_blank" rel="noopener">Ver en GitHub →</a>
+</div>
+
+<div class="card">
+<h3>Fuel Radar · Análisis y predicción de precios de carburantes</h3>
+<div class="meta">Proyecto con datos reales</div>
+<ul>
+<li>Análisis de datos históricos de precios de carburantes en España.</li>
+<li>Preparación y transformación de datos.</li>
+<li>Modelos de regresión (con Brent y autorregresivo) comparados con un baseline.</li>
+<li>Evaluación con métricas de error y comparación entre valores reales y predicciones.</li>
+</ul>
+<div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">Regresión</span><span class="tag">Series temporales</span></div>
+<a href="https://github.com/adriczabala-bit/gasolina-price-forecast" target="_blank" rel="noopener">Ver repositorio →</a>
+</div>
+
+<div class="card">
+<h3>Optimización policial y análisis del crimen en Madrid</h3>
+<div class="meta">Proyecto final de Data Analytics (Neoland) · en equipo de 3 personas</div>
+<ul>
+<li>Análisis de datos de criminalidad de municipios de la Comunidad de Madrid.</li>
+<li>Integración y análisis de diferentes fuentes de datos.</li>
+<li>Creación de indicadores y visualizaciones para apoyar la toma de decisiones.</li>
+<li>Dashboard en Power BI y demo online en Streamlit.</li>
+</ul>
+<div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Power BI</span></div>
+<a href="https://crime-pulse-madrid.streamlit.app" target="_blank" rel="noopener">Ver demo online →</a>
+</div>
+</div>
+
+<h2>Competencias técnicas</h2>
+<div class="skills">
+<div class="skill">SQL</div><div class="skill">Power BI</div><div class="skill">Python</div><div class="skill">Excel</div><div class="skill">Tableau</div><div class="skill">SAP</div>
+</div>
+<p class="meta" style="margin-top:12px">Análisis de datos · Modelos de regresión · Análisis de KPIs · Visualización de datos · Pensamiento analítico · Resolución de problemas</p>
+
+<h2>Experiencia</h2>
+<div class="grid">
+<div class="card">
+<div class="row"><h3>Administrativo · Gamboa Ecoauto</h3><span class="meta">03/2026 – 06/2026</span></div>
+<ul>
+<li>Gestión y análisis de datos de recambios, rutas y ventas de vehículos.</li>
+<li>Tratamiento y revisión de información de vehículos, productos y almacén.</li>
+<li>Registro, organización y seguimiento de datos en Excel y herramientas internas.</li>
+<li>Control de la información de albaranes y rutas.</li>
+</ul>
+</div>
+<div class="card">
+<div class="row"><h3>Asesor de ventas y análisis comercial · Norauto España</h3><span class="meta">06/2022 – 09/2022 · 06/2024 – 07/2025</span></div>
+<ul>
+<li>Análisis de información comercial y seguimiento de KPIs.</li>
+<li>Análisis de ventas y márgenes para identificar oportunidades de negocio.</li>
+<li>Consulta y gestión de información con SAP, Excel y herramientas internas.</li>
+<li>Control de inventario y seguimiento de stock.</li>
+<li>Asesoramiento a clientes y financiación mediante Oney.</li>
+</ul>
+</div>
+</div>
+
+<h2>Formación</h2>
+<div class="grid">
+<div class="card"><h3>Data Analytics</h3><div class="meta">Neoland, Madrid · 05/2026 – 07/2026</div></div>
+<div class="card"><h3>Grado Superior en Administración y Finanzas</h3><div class="meta">C.I.F.P. Federica Montseny, Fuenlabrada · 09/2024 – 07/2026</div></div>
+<div class="card"><h3>Bachillerato de Ciencias Sociales</h3><div class="meta">Fuenlabrada, Madrid · 09/2021 – 07/2023</div></div>
+</div>
+
+<h2>Idiomas</h2>
+<div class="skills">
+<div class="skill">Español · nativo</div><div class="skill">Inglés · B2</div><div class="skill">Francés · A1</div>
+</div>
+
+<footer>Madrid · adriczabala@gmail.com · © 2026 Adrián Zabala García</footer>
+</main>
+</body>
+</html>
